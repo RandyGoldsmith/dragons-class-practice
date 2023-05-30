@@ -16,25 +16,12 @@ class EvilDragon extends Dragon {
     }
 
     burnsNemesis() {
-        return `${this.name} destorys ${this.nemesis} with fire! WHOOOSH!!!.`
+        return `${this.name} destroys ${this.nemesis} with fire! WHOOOSH!!!`
     }
 
     
 };
 
-const enderDragon = new EvilDragon(
-    "Ender Dragon",
-    "black", [
-      "spit a fireball at Steve",
-      "rule over all the Endermen",
-      "destroy all blocks in its way"
-    ],
-    "Steve"
-  );
-  console.log(enderDragon);
-  enderDragon.dontInviteThemOverForDinner();
-  console.log(enderDragon.breathesFire());
-  console.log(enderDragon.burnsNemesis());
 
 
 module.exports = EvilDragon;
